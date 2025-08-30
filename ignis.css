@@ -1,0 +1,76 @@
+/* Theming Stuff for later */
+:root {
+  --text: darkslategrey;
+  --border: lightgrey;
+  --accent: red;
+  --bg: #dc3e1;
+  --gradientTop: white;
+  --gradientBottom: rgb(240, 248, 255, .8);
+}
+header {
+  background: url('');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    	--text: white;
+			--border: #5a7678;
+			--accent: #74C365;
+			--bg: rgb(0,60,60,.8);
+			--gradientBottom: rgb(0, 50, 60);
+			--gradientTop: darkslategrey;
+			a:link { color: lightblue; }
+  }
+  header{
+    background: url('');
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+.container {
+	max-width: 55rem;
+	margin: 5vw auto 12px auto;
+	border: 6px ridge var(--border);
+	outline: 3px solid var(--gradientTop);
+	outline-offset: 4px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	gap: 5px;
+}
+
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 48%; }
+.large { flex: 1 1 80%; }
+.small { flex: 1 1 12%; }
+
+header {
+  width: 100%;
+  padding: 16px 0;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section { padding: 12px; }
+
+nav { padding: 8px; }
+nav a { display: block; padding: 4px 0; color: inherit; }
+
+img { max-width: 100%; height: auto; display: block; }
+pre { overflow-x: auto; }
