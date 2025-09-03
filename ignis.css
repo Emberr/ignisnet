@@ -26,6 +26,10 @@ header {
   }
 }
 
+@media (max-width: 960px) {
+  .half, .small { flex-basis: 100%; min-width: 0; }
+}
+
 
 * {
   box-sizing: border-box;
@@ -40,22 +44,22 @@ body {
 }
 
 .container {
-	max-width: 55rem;
-	margin: 5vw auto 12px auto;
-	border: 6px ridge var(--border);
-	outline: 3px solid var(--gradientTop);
-	outline-offset: 4px;
-	border-radius: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 5px;
-	gap: 5px;
+  max-width: min(1100px, 92vw);
+  margin: 5vw auto 12px auto;
+  border: 6px ridge var(--border);
+  outline: 3px solid var(--gradientTop);
+  outline-offset: 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 5px;
 }
 
-.full { flex: 1 1 100%; }
-.half { flex: 1 1 48%; }
+.full  { flex: 1 1 100%; }
+.half  { flex: 1 1 48%;  min-width: 420px; }
 .large { flex: 1 1 80%; }
-.small { flex: 1 1 12%; }
+.small { flex: 1 1 20%; min-width: 100px; }
 
 header {
   width: 100%;
@@ -74,3 +78,14 @@ nav a { display: block; padding: 4px 0; color: inherit; }
 
 img { max-width: 100%; height: auto; display: block; }
 pre { overflow-x: auto; }
+
+.bezel{
+  border-style: solid;
+  border-width: 45px;
+  border-color: transparent;
+  border-image-source: url(assets/mtr.png);
+  border-image-slice: 64;
+  border-image-repeat: stretch;
+  border-image-width: 1;
+  padding:
+}

@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Ignisnet</title>
+	<!-- <link href="wikitable.css" rel="stylesheet" type="text/css" media="all"> -->
 	<link href="ignis.css" rel="stylesheet" type="text/css" media="all">
 	<link href="https://unpkg.com/7.css" rel="stylesheet" type="text/css" media="all">
 	<link href="crt.css" rel="stylesheet" type="text/css" media="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 </head>
-<body class="crt">
 
-	<div class="container">
+<body>
+
+	<div class="container bezel crt">
 
 		<header>
 			<span>Ignisnet</span>
 		</header>
-		
-        <div>
-            <div class="window active">
-                <div class="title-bar">
-                    <div class="title-bar-text">Navigation</div>
-                    <div class="title-bar-controls">
-                        <button aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="window-body has-space">
-                    <nav>
-                        <a href="">link</a>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>longer link</a>
-                        <a>an even longer link</a>
-                        <a>last link</a>
-                    </nav>
-                </div>
-            </div>
-            <!-- optional spot for styled button outside the navigation box -->
-            <img src="">
-        </div>
-		
+
+		<div>
+			<div class="window active">
+				<div class="title-bar">
+					<div class="title-bar-text">Navigation</div>
+					<div class="title-bar-controls">
+						<button aria-label="Close"></button>
+					</div>
+				</div>
+				<div class="window-body has-space">
+					<nav>
+						<a href="">link</a>
+						<a>link</a>
+						<a>link</a>
+						<a>link</a>
+						<a>link</a>
+						<a>link</a>
+						<a>link</a>
+						<a>longer link</a>
+						<a>an even longer link</a>
+						<a>last link</a>
+					</nav>
+				</div>
+			</div>
+			<!-- optional spot for styled button outside the navigation box -->
+			<img src="">
+		</div>
+
 		<section class="half">
 			<h1>welcome to my homepage!</h1>
-            
+
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
 			<h4>Heading 4</h4>
@@ -78,28 +81,183 @@
 				<li>Unordered list item 3</li>
 			</ol>
 		</section>
-				
-		<section class="small">
-			<h2></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis orci at sodales convallis. Proin luctus vehicula dolor, id ultrices diam eleifend eu. Donec tincidunt tellus tellus, in maximus lorem fermentum ac. Phasellus sagittis nisi in ante pretium, eget molestie est pellentesque. Ut tincidunt ultricies porta.</p>
+
+		<section class="small wikitable-section">
+			<style>
+				.wikitable-section {
+					--backgroundcolor: grey;
+					--textcolor: #2b2b2b;
+					--header: #969696;
+					--main: white;
+					--footer: #eaecf0;
+					--borders: #454545;
+					--link: blue;
+					--linkhover: purple;
+					--breadcrumb: grey;
+					--h1: #2b2b2b;
+					--h2: #2b2b2b;
+					--h3: #2b2b2b;
+					--headerunderline: grey;
+					--quotebackground: grey;
+					--quotetext: #2b2b2b;
+					--boxbg: #bfbfbf;
+					--showcontentborder: grey;
+					--seriesofbg: #bfbfbf;
+					--seriesoftext: #2b2b2b;
+					--infoboxbg: #eaecf0;
+					--centertext: #bdbdbd;
+					--boldtext: #2b2b2b;
+					--infotext: #2b2b2b;
+				}
+
+				.wikitable-section .infotable {
+					float: right;
+					margin-left: 5px;
+					background: var(--infoboxbg);
+					border-left: 2px solid var(--borders);
+					border: 2px solid var(--borders);
+					width: 100%;
+					font-size: 14px;
+					color: var(--infotext);
+					font-family: 'Atkinson Hyperlegible', sans-serif;
+					table-layout: fixed;
+					border-collapse: collapse;
+				}
+
+				.wikitable-section .infotable img {
+					max-width: 100%;
+					margin: auto;
+				}
+
+				.wikitable-section .infotable .col-label {
+					width: 30%;
+				}
+
+				.wikitable-section .infotable .col-data {
+					width: 65%;
+				}
+
+				.wikitable-section .infotable th {
+					width: 20%;
+					white-space: nowrap;
+					vertical-align: top;
+				}
+
+				.wikitable-section .infotable td {
+					overflow-wrap: anywhere;
+					word-break: normal;
+					vertical-align: top;
+				}
+
+				.wikitable-section .infotable ul {
+					margin: 0px 0 4px -35px;
+					list-style: none;
+				}
+
+				.wikitable-section #centertext {
+					text-align: center;
+					background: var(--centertext);
+				}
+			</style>
+			<table class="infotable">
+				<colgroup>
+					<col class="col-label">
+					<col class="col-data">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th colspan="2" id="centertext" style="text-align:center">Ember</th>
+					</tr>
+
+					<tr>
+						<th colspan="2" style="text-align:center;">
+							<p><img src="assets/catonputer.png" alt="webmaster icon"></p>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" id="centertext">About me</th>
+					</tr>
+					<tr>
+						<th>Nationality</th>
+						<td>Turkish</td>
+					</tr>
+					<tr>
+						<th>Age</th>
+						<td>20</td>
+					</tr>
+					<tr>
+						<th>Height</th>
+						<td>6'0" (183 cm)</td>
+					</tr>
+					<tr>
+						<th colspan="2" id="centertext">Beliefs & Alignment</th>
+					</tr>
+					<tr>
+						<th>Religion</th>
+						<td>Eastern Orthodox</td>
+					</tr>
+
+					<tr>
+						<th colspan="2" id="centertext">Library</th>
+					</tr>
+					<tr>
+						<th>Reading</th>
+						<td>
+							<ul>
+								<li><i>Confessions</i></li>
+								<li><i>Summa Theologica</i></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<th colspan="2" id="centertext">Listening</th>
+					</tr>
+					<tr>
+						<th>Genres</th>
+						<td>
+							<ul>
+								<li>Jazz noir</li>
+								<li>Rap</li>
+								<li>Reggae</li>
+								<li>Drum & Bass</li>
+								<li>Jungle</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<th colspan="2" id="centertext">Hobbies & Preferences</th>
+					</tr>
+					<tr>
+						<th>Hobbies</th>
+						<td>Window-shopping</td>
+					</tr>
+					<tr>
+						<th>Drinks</th>
+						<td>Mountain Dew</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
-		
+
 		<section class="full">
 			<p>how far im done with the site</p>
-            <div role="progressbar" class="error animate">
-                <div style="width: 1%"></div>
-            </div>
+			<div role="progressbar" class="error animate">
+				<div style="width: 2%"></div>
+			</div>
 		</section>
-		
+
 		<section class="half">
 			<h2>half width section</h2>
 		</section>
-		
+
 		<section class="half">
 			<h2>half width section</h2>
 		</section>
-		
+
 	</div>
 
 </body>
+
 </html>
