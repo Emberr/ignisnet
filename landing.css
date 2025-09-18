@@ -1,9 +1,10 @@
 html{
     background-color: black;
     background-image: url(assets/idkbg.png);
-    background-size: 100vw;
-    background-position-y: -60vh;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     image-rendering: pixelated;
     font-family: 'Alagard', system-ui, sans-serif;
 }
