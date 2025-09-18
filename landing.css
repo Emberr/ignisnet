@@ -1,0 +1,47 @@
+html{
+    background-color: black;
+    background-image: url(assets/idkbg.png);
+    background-size: 100vw;
+    background-position-y: -60vh;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    font-family: 'Alagard', system-ui, sans-serif;
+}
+
+@font-face {
+    font-family: 'Alagard';
+    src: url('assets/alagard.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.806);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+}
+
+.dither-image {
+    position: relative;
+    float: right;
+    top: 80px;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    image-rendering: pixelated;
+}
+
+h1{
+    justify-self: center;
+    font-size: 5vh;
+}
+
+a,p{
+    padding: 20px;
+}
